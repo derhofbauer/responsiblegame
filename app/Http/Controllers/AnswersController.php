@@ -11,6 +11,11 @@ class AnswersController extends Controller
 {
     public function check (Request $request){
 
+     /**
+      * Was bringt dir das? du speicherst ja nicht die vom User eingegebene Antwort ab,
+      * sondern die korrekte Antwort, wenn ich das richtig verstehe. Du musst also die Antwort,
+      * die der User über das $request Objekt übermittelt hat, in dieser Funktion vergleichen.
+      */
       $user_answer = DB::table('levels')->find(3);
 
        $answer = Answers::all();
