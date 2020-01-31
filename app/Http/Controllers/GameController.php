@@ -12,8 +12,7 @@ class GameController extends Controller
     public function index()
     {
         return view('game');
-        return view('game2');
-        
+        // return view('game2'); Eine Funktion kann nur ein return Statement haben
     }
 
 }
